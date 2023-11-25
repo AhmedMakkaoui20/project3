@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Puzzle</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .boxes-container {
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 2px solid #333;
+            background-color: #3498db;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none; /* Remove underlines for anchor tags */
+            border-radius: 10px; /* Add rounded corners */
+            color: white; /* Set text color to white */
+        }
+
+        .image {
+            width: 300px; /* Adjust the width to your preference */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">
+        <h1>Choose Your Puzzle Size</h1>
+    </div>
+
+    <img src="photo.png" alt="Puzzle Image" class="image">
+
+    <div class="boxes-container">
+        <a href="bird3/bird3.html" class="box">
+            <h2>3x3 Puzzle</h2>
+        </a>
+
+        <a href="bird/fifteen.html" class="box">
+            <h2>4x4 Puzzle</h2>
+        </a>
+    </div>
+
+</body>
+</html>

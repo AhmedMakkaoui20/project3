@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .box-container {
+            display: flex;
+            margin-top: 20px; /* Add margin at the top of the box container */
+        }
+
+        .box {
+            width: 300px;
+            height: 350px;
+            margin: 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box img {
+            max-width: 250px;
+            max-height: 250px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            margin: 0; /* Remove default margin for the title */
+        }
+
+        .box:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Puzzle</h1>
+    <div class="box-container">
+        <div class="box" onclick="window.location.href='birdoption.html'">
+            <img src="photo.png" alt="Photo 1">
+            <p>Bird Puzzle</p>
+        </div>
+        <div class="box" onclick="window.location.href='dogoption.html'">
+            <img src="dog.png" alt="Photo 2">
+            <p>Dog Puzzle</p>
+        </div>
+        <div class="box" onclick="window.location.href='squirreloption.html'">
+            <img src="squirrel.png" alt="Photo 3">
+            <p>Squirrel Puzzle</p>
+        </div>
+        <div class="box" onclick="window.location.href='Ostrichoption.html'">
+            <img src="ostrich.png" alt="Photo 4">
+            <p>Blue Ostrich Puzzle</p>
+        </div>
+    </div>
+
+    <a href="https://validator.w3.org/"><img style="margin-top: 140px; padding-left: 1100px; width: 100px; height: 40px;" src="w3c.png"></a>
+    <a href="https://www.jslint.com/"><img style="width: 100px; padding-left: 1100px; height: 40px;" src="jslint.png"></a>
+</body>
+</html>
+
